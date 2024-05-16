@@ -10,14 +10,15 @@
 
 
 body{
+    min-height: 340vh;
     height: 100vh;
     background-color:#7387AD;
 }
 
 #linha_topo{
-    position: fixed;
     width: 100%;
     top: 0;
+    position: fixed;
 }
 
 #topo{
@@ -36,13 +37,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 #menu{
     background-color: #E89E0B;
     display: flex;
     justify-content: center;
+    top: 0px;
+    z-index: 1;
 }
 
 #menu ul{
@@ -105,7 +107,7 @@ body{
 }
 
 #p1 p{
-    font-size: 1.5em;
+    font-size: 1.45em;
     margin-left: 5vh;
 }
 .column{
@@ -136,19 +138,20 @@ body{
 }
 
 #p2{
-    height: 100vh;
+    height: 90vh;
     padding-top: 220px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    text-align: center;
+    justify-content: center;
+    float: left;
 }
 
 #p2 .card h2{
     font-size: 1.7em;
     color: #f1f1f1;
-    display: flex;
+    margin-left: 2vh;
     text-align: center;
 }
 
@@ -172,47 +175,68 @@ body{
 
 #p3{
     height: 100vh;
-    padding-top: 220px;
+    padding-top: 260px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    justify-items: center;
     text-align: center;
     float:left;
     width: 33.33%;
 }
-.row::after{
-    content: "";
-    display: table;
-    clear: both;
-}
+
 #spotify{
-    width: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    float: left;
+    background-color: #E89E0B;
 }
 
 #disco{
-    width: 50%;
-}
-
-.card p{
-    font-size: 1em;
+    width: 20%;
+    margin-left: 5%;
     display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
     text-align: center;
+    float: left;
+    font-size: 1em;
 }
 
 #p4{
     height: 100vh;
-    padding-top: 220px;
+    padding-top: 300px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     text-align: center;
 }
-.card p{
-    font-size: 1em;
+
+#curiosidade{
+    width: 50%;
     display: flex;
-    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-around;
+    font-size: 1.6em;
+    float: left;
+}
+
+#mammamia{
+    width: 20%;
+    margin-left: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    float: left;
 }
 
 #rodape{
@@ -220,8 +244,38 @@ body{
     background-color: #7387AD;
     font-size: 22px;
     display: flex;
+    justify-content: center;
     align-items: center;
+    flex-direction: row;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#rodape a button {
+    background-color: #E89E0B; 
+    border-radius: 3em;
+    color: rgb(0, 0, 0);
+    padding: 0.85em 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
     justify-content: space-around;
+    font-size: 0.85em;
+    margin-left: 5%;
+}
+
+#rodape a img{
+    width: 5%;
+    height: 5%;
+    margin-left: 15%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    float: left;
 }
 
 @media screen and (max-width: 600px) {
